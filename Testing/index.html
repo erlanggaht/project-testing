@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="mediaQuery.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   
+    <title>Testing</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu1">
+                <span class="logo">./Erlanggaht93 
+                </span>
+                <div class="btnNav"><span class="arrow-icon">
+                    
+                    </span></div>
+                <ul class="menulist">
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Our Services</li></a>
+                <a href=""><li>Coorperation</li></a>
+                <a href=""><li>Portofolio</li></a>
+            </ul>
+            </div>
+            <div class="contactUs">
+                <span class="btn-contact">Contact Us</span>
+            </div>
+        </nav>
+
+        <div class="container-header">
+        <div class="content-header1">
+            <span class="title"> Welcome to My Website </span>
+
+            <div class="inputform">
+            <input type="text" class="input-header" name="input-header"><button class="btn-header" for="input-header">Call Back</button>
+            </div>
+            <div class="desc-header">
+                <p class="desc-paraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde, voluptatem minus atque iusto nemo corrupti dolorem est earum praesentium quam. Fuga atque hic cupiditate dolor inventore fugit obcaecati provident.</p>
+                <div class="desc-btn">
+                     <span class="desc-button1">Start Transportation</span>
+                    <span class="desc-button2">Explore More <span class="material-symbols-outlined" style="transform:scale(1.2) translate(4px,3px)">
+                        chip_extraction
+                        </span></span>
+                    </div>
+            </div>
+            </div>
+
+            <div class="content-header2">
+                <img src="/img/kapal.png" alt="" class="content-headerImg">
+                </div>
+        </div>
+    </header>
+    <div class="container--">
+        <div class="row">
+            <div class="card card1">
+            </div>
+            <div class="card card2">
+                <h3>Our Story</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="card-content"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis a alias
+                    aperiam non odio incidunt voluptate sed. Quas, nisi recusandae. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Nam deleniti sequi dignissimos. Sit inventore eos adipisci voluptate
+                    expedita fugiat pariatur.
+                </p>
+            </div>
+            <div class="card card3">
+                <h3>Paramaters</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum autem non
+                    quasi!</p>
+                <img src="/img/z7typ6qg.bmp" alt="kapalukuran">
+            </div>
+            <div class="card card4">
+                <img src="/img/js.gif" alt="js">
+            </div>
+        </div>
+    </div>
+    
+    <script src="tes.js" type="text/javascript"></script>
+    <script>
+        const btnNav = document.querySelector('.arrow-icon')
+        btnNav.addEventListener('click',function(){
+            document.querySelector('.menulist').classList.toggle('menulist-js') 
+        document.querySelector('.contactUs').classList.toggle('menulist-js') 
+     
+        
+        })
+
+        
+        document.querySelector('.title').addEventListener('mouseover',function(){
+            this.addEventListener('mouseout',function(){
+                document.querySelector('.content-headerImg').classList.remove('content-headerOpacity')
+
+            })
+            document.querySelector('.content-headerImg').classList.add('content-headerOpacity')
+        })
+        document.querySelector('.content-headerImg').addEventListener('mouseover',function(){
+            this.addEventListener('mouseout',function(){
+                document.querySelector('.content-headerImg').classList.remove('content-headerOpacity')
+
+            })
+            document.querySelector('.content-headerImg').classList.add('content-headerOpacity')
+        })
+      
+    </script>
+</body>
+
+</html>
