@@ -233,7 +233,7 @@ min-height:50vh;
 
 .card1::before{
     position: absolute;
-    background: url(/img/xjn35c77.bmp)no-repeat;
+    background: url(img/xjn35c77.bmp)no-repeat;
     background-position: center;
     background-size: cover;
     content: "";
