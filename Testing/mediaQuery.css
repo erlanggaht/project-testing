@@ -74,7 +74,7 @@ and (max-width: 1024px)  {
 }
 
 @media screen and (max-width: 480px)
-and (orientation: portrait),(min-width: 481px) and (max-width:768px){
+and (orientation: portrait),(min-width: 481px) and (max-width:768px),(device-width: 414px) and (device-height:896px) and (-webkit-device-pixel-ratio :3){
     body {
     }
   
