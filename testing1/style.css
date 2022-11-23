@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,600;1,400&display=swap');
+
+:root{
+    --fontDefault : 16px;
+    --colorText : #282828;
+    --textTitle : 2.5em;
+    --textsmall : 13px;
+}
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Gantari', sans-serif;
+    color: var(--colorText);
+    
+}
+.toor{
+background-color: #222;
+color: #eee;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: var(--textTitle);
+}
+
+body{
+    padding: 0;margin: 0;
+    background-color: #303357;
+    font-size: var(--fontDefault);
+
+}
+a:hover{
+    opacity: 0.8;
+}
+
+#container-layout{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 70vw;
+    min-height: 90vh;
+    background-color: #eee;
+    border-radius: 16px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    box-shadow: 2px 2px 1px #282828;
+    position: relative;
+}
+#container:before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: inherit;
+    position: absolute;
+    z-index: 99999;
+    animation: slideshow 1.5s ease-out;
+    animation-direction: alternate;
+    border-radius: 16px;
+}
+@keyframes slideshow {
+    0%{
+        height: 100%;
+    }
+    10%{
+        height: 90%;
+    }
+    20%{
+        height: 80%;
+    }
+    30%{
+        height: 70%;
+    }
+    40%{
+        height: 60%;
+    }
+    50%{
+        height: 50%;
+    }
+    60%{
+        height: 40%;
+    }
+    70%{
+        height: 30%;
+    }
+    80%{
+        height: 20%;
+    }
+    90%{
+        height: 10%;
+    }
+    100%{height: 5%;}
+}
+.area1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.form{
+    text-align: center;
+    padding: 2rem;
+
+}
+.area1 .form input,.area1 .form button{
+    border: 2px #b9b9b9 solid;
+    outline: none;
+    background-color: transparent;
+    border-radius: 50px;
+    height: 45px;
+    width: 250px;
+    margin-top: 7px;
+    padding: 10px 27px;
+}
+.area1 .form .btn-login{
+    background-color:#303357;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+}
+.area1 .form .btn-login:hover{
+    background-color:#2d3058;transition: .3s;
+    
+}
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;align-items: center;
+    margin: 7px 0;color: #b9b9b9;
+}
+.hr{width: 108px;transform: scaleY(0.5);margin: 0 5px;}
+.area2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.area2::before{
+    background-image: url(img/partychef.gif);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;right: 0;
+}
+
+.paragraf1{
+    font-size: 0.8rem;
+    margin: 27px 0px 7px 0px;
+}
+
+.remember-forgot{
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    margin: 18px 10px 27px 10px;
+}
+
+.dontHave{
+    font-size: 0.78rem;
+    margin-top: 16px;
+}
+
+.btn-login-apple{
+    background-image: url(img/apple.png);
+    background-position: 35px 10px;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    font-size: 0.8rem;position: relative;    cursor: pointer;
+
+}
+.btn-login-apple:hover{
+    border-color: #303357 !important;
+}
+.btn-login-apple::before{
+    content: "";
+    background-color: inherit;
+    height: 100%;
+    position: absolute;
+    right:-1px;
+    top:0;
+    border-radius:0px 50px 50px 0px;
+    z-index: 1;
+}
+.btn-login-apple:not(:hover):before{
+    transition: .5s;
+    background-color: #b9b9b9;
+    width:0%;
+    border-radius:0px 50px 50px 0px;
+    
+}
+.text-apple{
+    position: absolute;
+    z-index: 99;
+    margin-left: 4px;
+}
+.btn-login-apple:hover:before{
+    transition: .5s;
+    background-color: #303357 ;
+    width: 34.4% ;
+    cursor: pointer;
+
+}
+
+.btn-input-user{
+    background-image: url(img/mail.svg);
+    background-size: 21px; ;
+    background-repeat: no-repeat;
+    background-position-x:212px;
+    background-position-y:10px;
+    position: relative;
+
+}
+.btn-input-pass{
+    background-image: url(img/password.svg);
+    background-size: 21px; ;
+    background-repeat: no-repeat;
+    background-position-x:212px;
+    background-position-y:10px;position: relative;
+
+}
+.btn-input-user:hover,.btn-input-pass:hover{
+    opacity: 0.7;border-color: #303357 !important;
+}
+.emot{
+    animation: welcome .5s ease-in-out;
+    display: inline-block;  
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes welcome{
+    from{
+        -webkit-transform: rotate(0deg);
+        }
+
+    to{
+        -webkit-transform: rotate(70deg);
+    }
+}

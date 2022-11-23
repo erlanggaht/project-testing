@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container-layout">
+    <div id="container">
+        <div class="area1">
+            <h1>Welcome Back <span class="emot">👋</span> </h1>
+            <div class="form">
+                <form action="" method="POST">
+                    <p class="paragraf1">Please enter your details.</p>
+                    <button class="btn-login-apple">Login In with <span class="text-apple">Apple</span></button>
+                    <div class="or"><div class="hr"><hr style="color: #b9b9b9"></div> or <div class="hr"><hr style="color: #b9b9b9"></div></div>
+
+                    <input type="username" placeholder="Username" class="btn-input-user"><br>
+                    <input type="password" placeholder="Password" class="btn-input-pass">
+                    <div class="remember-forgot"><p>remember for 30 days</p> <p  style='color:#a09e9e''>Forgot Password?</p></div>
+                    <button type="submit" class="btn-login">Log In</button>
+                    <p class="dontHave">Dont'p have in account ? <a href="">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="area2">
+        </div>
+    </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <script> 
+    window.devicePixelRatio
+
+        document.querySelector('.btn-login-apple').addEventListener('mouseover',function(e){
+            document.querySelector('.text-apple').style.color="#fff"
+            e.target.addEventListener('mouseleave',function(){
+                document.querySelector('.text-apple').style.color="inherit"
+            })
+            
+            
+        })
+
+
+    </script>
+</body>
+</html>
