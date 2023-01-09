@@ -1,0 +1,18 @@
+#listmenu > a {
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+#listmenu > a > i {
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    border:0px;
+    outline: none;
+  }
+
+input[type="range"] {
+    width:50%;
+  }
