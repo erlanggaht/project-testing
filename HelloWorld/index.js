@@ -45,19 +45,49 @@ window.onload = () => {
 };
 
 // Menu Navigasi
+
+function linemenu (){
+  const linemenu2 = document.querySelector('#menu span:nth-child(2)')
+  linemenu2.classList.toggle('garismenu2')
+
+  document.querySelector('#menu span:nth-child(1)').classList.toggle('garismenu1')
+  document.querySelector('#menu span:nth-child(3)').classList.toggle('garismenu3')
+
+  function linemenuout () {
+    return function run (){
+      const linemenu2 = document.querySelector('#menu span:nth-child(2)')
+      linemenu2.classList.remove('garismenu2')
+
+  document.querySelector('#menu span:nth-child(1)').classList.remove('garismenu1')
+  document.querySelector('#menu span:nth-child(3)').classList.remove('garismenu3')
+    }
+  }
+
+  return linemenuout()
+}
+
+const linemenuInner = linemenu
+const RunlinemenuInner = linemenuInner()
+RunlinemenuInner()
+
 document.querySelector("#menu").addEventListener("click", function () {
   const listmenu = document.querySelector("#listmenu");
+   
+  linemenu()
 
   listmenu.classList.toggle("-right-0");
   listmenu.classList.toggle("-right-[100vw]");
 });
 
 window.addEventListener("scroll", async function () {
+  RunlinemenuInner()
   const a = document.body.getBoundingClientRect().top;
   if (a <= -283) {
+
   } else {
     listmenu.classList.remove("-right-0");
     listmenu.classList.add("-right-[100vw]");
+
   }
 });
 
