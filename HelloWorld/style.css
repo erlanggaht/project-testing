@@ -16,3 +16,20 @@ input[type="color"] {
 input[type="range"] {
     width:50%;
   }
+
+  .garismenu2 {
+      width: 0px !important;   
+      transition: ease-in .3s;
+ 
+  }
+
+  .garismenu1{
+    transform: rotate(120deg) translateX(7px);
+    transition: ease-in .4s;
+  }
+
+  .garismenu3{
+    transform: rotate(-120deg) translateX(6px);
+    transition: ease-in .4s;
+
+  }
